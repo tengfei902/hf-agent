@@ -175,7 +175,7 @@
             e.preventDefault();
             var $form = $(e.target);
             var bv = $form.data('bootstrapValidator');
-            $.post($form.attr('action'), $form.serialize(), function(res) {
+            jQuery.post($form.attr('action'), $form.serialize(), function(res) {
                 if(res.errorno){
                     layer.msg(res.msg ? res.msg : '添加失败,请重新提交，谢谢！', {
                         time: 20000, //20s后自动关闭
