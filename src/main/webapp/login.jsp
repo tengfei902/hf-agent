@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>威付宝支付系统 - 登录</title>
+    <title>慧富宝支付系统 - 登录</title>
     <link href="http://demo.ddi9.com/Public/Front/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://demo.ddi9.com/Public/Front/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" src="http://demo.ddi9.com/Public/Front/bootstrapvalidator/css/bootstrapValidator.min.css">
@@ -31,22 +31,16 @@
         <div class="col-md-4 col-md-push-8">
 
             <form class="fh5co-form animate-box form-horizontal" data-animate-effect="fadeInRight" id="formlogin"
-                  method="post" role="form" action="/Agent_Login_checklogin.html">
+                  method="post" role="form" action="/agent/user/login">
                 <div class="form-group"><h2>代理登录</h2>  </div>
                 <div class="form-group">
                     <label for="username" class="sr-only">用户名</label>
-                    <input type="text" class="form-control" id="username" name="username" placeholder="用户名" required="" minlength="2" aria-required="true" autocomplete="off">
+                    <input type="text" class="form-control" id="loginId" name="loginId" placeholder="用户名" required="" minlength="2" aria-required="true" autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="password" class="sr-only">密码</label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="密码" required="" aria-required="true" placeholder="Password" autocomplete="off">
                 </div>
-                <div class="form-group">
-                    <span class="col-sm-4 mp-nm"><input type="text" class="form-control" id="verification" name="varification"  placeholder="验证码" required=""  aria-required="true" placeholder="Password" autocomplete="off" ajaxurl="/Agent_Login_checkverify.html"></span>
-                    <label class="userverification col-sm-8"><img class="verifyimg" alt="点击刷新验证码" src="/Agent_Login_verifycode.html" style="cursor:pointer;" onclick='javascript:$(".verifyimg").attr("src","/Agent_Login_verifycode.html");' title="点击刷新验证码"></label>
-
-                </div>
-
                 <div class="form-group">
                     <label for="remember"><input type="checkbox" id="remember"> 记住我</label>
                 </div>
@@ -61,7 +55,7 @@
         </div>
     </div>
     <div class="row" style="padding-top: 60px; clear: both;">
-        <div class="col-md-12 text-center"><p><small>&copy; 威付宝支付系统 All Rights Reserved.  </small></p></div>
+        <div class="col-md-12 text-center"><p><small>&copy; 慧富宝支付系统 All Rights Reserved.  </small></p></div>
     </div>
 </div>
 <script src="http://demo.ddi9.com/Public/Front/js/jquery.min.js"></script>
