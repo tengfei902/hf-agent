@@ -4,6 +4,12 @@
 
 <web-app>
   <display-name>hf-agent</display-name>
+
+  <context-param>
+    <param-name>webAppRootKey</param-name>
+    <param-value>webapp.agent</param-value>
+  </context-param>
+
   <servlet>
     <servlet-name>weaverServlet</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
