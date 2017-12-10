@@ -156,7 +156,7 @@
         form.on('switch(switchStatus)', function (data) {
             var isopen = this.checked ? 1 : 0,
                     uid = $(this).attr('data-uid');
-            $.ajax({
+            jQuery.ajax({
                 url: "/agent_agent_editstatus.html",
                 type: 'post',
                 data: "uid=" + uid + "&isopen=" + isopen,

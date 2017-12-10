@@ -42,4 +42,18 @@
 		<property name="requestContextAttribute" value="rc"/><!--request属性引用名称-->
 		<property name="toolboxConfigLocation" value="/WEB-INF/toolbox.xml"/>
 	</bean>
+
+	<bean class="hf.base.client.DefaultClient">
+		<constructor-arg value="${hf}"></constructor-arg>
+	</bean>
+
+	<bean id="defaultDispatcher" class="hf.base.dispatcher.DefaultDispatcher"></bean>
+
+	<bean id="dispatcherFactory" class="hf.base.dispatcher.DefaultDispatcherFactory">
+		<constructor-arg>
+			<map>
+				<entry key="agent_promote" value-ref="promoteDispatcher"/>
+			</map>
+		</constructor-arg>
+	</bean>
 </beans>

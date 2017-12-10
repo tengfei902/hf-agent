@@ -31,7 +31,8 @@
             </div>
             <div class="ibox-content">
                 <span class="tgdzlj-title">推广地址链接:</span>
-                <span class="tgdzlj-wz">http://demo.ddi9.com/agent_login_register.html?pid=25</span>
+                <span class="tgdzlj-wz">http://huifufu.cn/user/register.jsp?i=#if(${inviteCode})${inviteCode}#end
+                </span>
                 <div class="tgdzlj-note">
                     <span class="red">把推广地址链接发送给你的下级注册,注册之后成为你的下级用户</span>
                 </div>
