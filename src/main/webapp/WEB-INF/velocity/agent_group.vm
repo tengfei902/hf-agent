@@ -24,44 +24,48 @@
         <div class="col-md-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>个人信息</h5>
+                    <h5>商户信息</h5>
                 </div>
                 <div class="ibox-content">
                     <!--用户信息-->
                     <form class="layui-form" action="" autocomplete="off" id="profile">
                         <input type="hidden" name="id" value="25">
                         <div class="layui-form-item">
-                            <label class="layui-form-label">姓名：</label>
+                            <label class="layui-form-label">商户名：</label>
                             <div class="layui-input-block" style="line-height: 29px;">
-                                <span >${userInfo.name}</span>
+                                <span >${userGroup.name}</span>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">法人：</label>
+                            <div class="layui-input-block" style="line-height: 29px;">
+                                <span >${userGroup.ownerName}</span>
                             </div>
                         </div>
                         <div class="layui-form-item">
                             <label class="layui-form-label">身份证号码：</label>
                             <div class="layui-input-block" style="line-height: 29px;">
-                                <span>${userInfo.idCard}</span>
+                                <span>${userGroup.idCard}</span>
                             </div>
                         </div>
-
                         <div class="layui-form-item">
                             <div class="layui-inline">
                                 <label class="layui-form-label">手机：</label>
                                 <div class="layui-input-inline" style="line-height: 29px;">
-                                    <span>${userInfo.tel}</span>
+                                    <span>${userGroup.tel}</span>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="layui-form-item">
-                            <label class="layui-form-label">QQ：</label>
-                            <div class="layui-input-block" style="line-height: 29px;">
-                                <span>${userInfo.qq}</span>
                             </div>
                         </div>
                         <div class="layui-form-item">
                             <label class="layui-form-label">联系地址：</label>
                             <div class="layui-input-block" style="line-height: 29px;">
-                                <span>${userInfo.address}</span>
+                                <span>${userGroup.address}</span>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">商户编号：</label>
+                            <div class="layui-input-block" style="line-height: 29px;">
+                                <span>${userGroup.groupNo}</span>
                             </div>
                         </div>
                         <input type="hidden" name="__hash__" value="a3ceafec8e92d9ad1b51017d0415c571_2cba14779e2c6b8b2e0d4e51089948c3" /></form>

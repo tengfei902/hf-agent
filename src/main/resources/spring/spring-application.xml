@@ -53,6 +53,9 @@
 		<constructor-arg>
 			<map>
 				<entry key="agent_promote" value-ref="promoteDispatcher"/>
+				<entry key="agent_personal" value-ref="agentPersonalDispatcher"/>
+				<entry key="agent_group" value-ref="agentPersonalDispatcher"/>
+				<entry key="agent_channel_index" value-ref="agentChannelDispatcher"/>
 			</map>
 		</constructor-arg>
 	</bean>
