@@ -45,9 +45,6 @@
                     <label for="remember"><input type="checkbox" id="remember"> 记住我</label>
                 </div>
                 <div class="form-group">
-                    <p>还不是会员? 点击 <a href="/Agent_Login_register.html">注册账号</a> | <a href="javascript:alert('请联系客服')">忘记密码?</a></p>
-                </div>
-                <div class="form-group">
                     <button class="btn btn-primary">点击登录</button>
                 </div>
                 <input type="hidden" name="__hash__" value="fd408b4a51869cccb4db8232743e0693_de8eadff5b65f5baf4801f6196739598" /></form>

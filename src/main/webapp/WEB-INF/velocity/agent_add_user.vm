@@ -18,28 +18,32 @@
         <div class="col-md-12 ">
 
             <!-- Start Sign In Form -->
-            <form class="fh5co-form animate-box" data-animate-effect="fadeInRight" role="form" id="Formreg" method="post" action="/agent_member_checkadduser.html" autocomplete="off">
+            <form class="fh5co-form animate-box" data-animate-effect="fadeInRight" role="form" id="Formreg" method="post" action="#springUrl('/user/register')" autocomplete="off">
                 <h2>添加商户会员</h2>
                 <input type="hidden" name="pid" value="25"/>
 
                 <div class="form-group">
                     <label for="name" class="sr-only">用户名</label>
-                    <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名" >
+                    <input type="text" class="form-control" id="loginId" name="loginId" placeholder="请输入用户名" >
                 </div>
                 <div class="form-group">
-                    <label for="email" class="sr-only">登录密码</label>
+                    <label for="password" class="sr-only">登录密码</label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="请输入登录密码" >
                     <div class="progress password-progress">
                         <div id="strengthBar" class="progress-bar" role="progressbar" style="width: 0;"></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="password" class="sr-only">再次输入密码</label>
+                    <label for="re-password" class="sr-only">再次输入密码</label>
                     <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="请再次输入登录密码" >
                 </div>
                 <div class="form-group">
-                    <label for="re-password" class="sr-only">输入您的email</label>
+                    <label for="email" class="sr-only">输入您的email</label>
                     <input type="email"  class="form-control" id="email" name="email" placeholder="请输入商户的Email地址" >
+                </div>
+                <div class="form-group">
+                    <label for="tel" class="sr-only">输入您的手机号</label>
+                    <input type="tel"  class="form-control" id="tel" name="tel" placeholder="请输入商户的手机号" >
                 </div>
                 <div class="form-group">
                     <div id="messages"></div>

@@ -61,20 +61,23 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#"> <i class="fa fa fa-gears"></i> <span class="nav-label">商户管理</span> </a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="#springUrl('/common/agent_add_user')" class="J_menuItem"><strong>添加商户</strong></a> </li>
-                        </li>
-                    </ul>
+                #if(${userInfo.status}==10)
+                    <li><a href="#"> <i class="fa fa fa-gears"></i> <span class="nav-label">商户管理</span> </a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="#springUrl('/common/agent_add_user')" class="J_menuItem"><strong>添加商户</strong></a> </li>
+                        </ul>
 
-                    <ul class="nav nav-second-level">
-                        <li><a href="#springUrl('/common/agent_member')" class="J_menuItem"><strong>下级商户管理</strong></a> </li>
-                    </ul>
-                </li>
+                        <ul class="nav nav-second-level">
+                            <li><a href="#springUrl('/common/agent_member')" class="J_menuItem"><strong>下级商户管理</strong></a> </li>
+                        </ul>
+                    </li>
+                #end
                 <li><a href="#"> <i class="fa fa fa-gears"></i> <span class="nav-label">交易管理</span> </a>
                     <ul class="nav nav-second-level">
-                        <li><a href="#springUrl('/common/agent_deal_detail')" class="J_menuItem"><strong>交易明细查询</strong></a>
+                        <li><a href="#springUrl('/common/agent_order_record')" class="J_menuItem"><strong>交易记录</strong></a>
                         </li>
+                        <li><a href="#springUrl('/common/agent_withdraw')" class="J_menuItem"><strong>结算申请</strong></a></li>
+                        <li><a href="#springUrl('/common/agent_withdraw_record')" class="J_menuItem"><strong>结算记录</strong></a></li>
                     </ul>
                 </li>
 
