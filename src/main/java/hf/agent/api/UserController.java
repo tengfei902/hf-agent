@@ -209,4 +209,15 @@ public class UserController {
         modelAndView.addObject("requestInfo",withDrawRequest);
         return modelAndView;
     }
+
+    @RequestMapping(value = "/edit_password",method = RequestMethod.POST,produces = "application/json;charset=UTF-8")
+    public @ResponseBody Map<String,Object> editPassword(HttpServletRequest request) {
+        String userId = String.valueOf(request.getSession().getAttribute("userId"));
+        String ypassword = request.getParameter("ypassword");
+        String newpassword = request.getParameter("newpassword");
+        String newpasswordok = request.getParameter("newpasswordok");
+
+        boolean result = client.editPassword(userId,ypassword,newpassword,newpasswordok);
+        return MapUtils.buildMap("status",result);
+    }
 }
