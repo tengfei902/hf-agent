@@ -4,6 +4,7 @@ import hf.base.client.DefaultClient;
 import hf.base.dispatcher.DispatchResult;
 import hf.base.dispatcher.Dispatcher;
 import hf.base.model.UserChannel;
+import hf.base.model.UserGroup;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +24,15 @@ public class AgentChannelDispatcher implements Dispatcher {
         DispatchResult dispatchResult = new DispatchResult();
         dispatchResult.setPage(page);
         dispatchResult.addObject("channels",channels);
+
+        dispatchResult.addObject("payUrl","http://huifufu.cn/hf-pay/pay");
+        dispatchResult.addObject("refundUrl","http://huifufu.cn/hf-pay/refund");
+        dispatchResult.addObject("queryUrl","http://huifufu.cn/hf-pay/queryOrder");
+
+        UserGroup userGroup = client.getUserGroupById(groupId);
+        dispatchResult.addObject("groupNo",userGroup.getGroupNo());
+        dispatchResult.addObject("callBackUrl",userGroup.getCallbackUrl());
+        dispatchResult.addObject("cipherCode",userGroup.getCipherCode());
         return dispatchResult;
     }
 }
