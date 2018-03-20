@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>慧富宝支付系统 - 登录</title>
-    <link href="http://demo.ddi9.com/Public/Front/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://demo.ddi9.com/Public/Front/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" src="http://demo.ddi9.com/Public/Front/bootstrapvalidator/css/bootstrapValidator.min.css">
-    <link href="http://demo.ddi9.com/Public/Front/css/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://demo.ddi9.com/Public/Front/login/css/style.css">
-    <script src="http://demo.ddi9.com/Public/Front/login/js/modernizr-2.6.2.min.js"></script>
+    <link href="Public/Front/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Public/Front/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" src="Public/Front/bootstrapvalidator/css/bootstrapValidator.min.css">
+    <link href="Public/Front/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="Public/Front/login/css/style.css">
+    <script src="Public/Front/login/js/modernizr-2.6.2.min.js"></script>
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html"/>
     <![endif]-->
@@ -55,9 +55,9 @@
         <div class="col-md-12 text-center"><p><small>&copy; 慧富宝支付系统 All Rights Reserved.  </small></p></div>
     </div>
 </div>
-<script src="http://demo.ddi9.com/Public/Front/js/jquery.min.js"></script>
-<script src="http://demo.ddi9.com/Public/Front/js/bootstrap.min.js"></script>
-<script src="http://demo.ddi9.com/Public/Front/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
+<script src="Public/Front/js/jquery.min.js"></script>
+<script src="Public/Front/js/bootstrap.min.js"></script>
+<script src="Public/Front/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
 
 <div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261742514'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1261742514' type='text/javascript'%3E%3C/script%3E"));</script></div></body>
 </html>
